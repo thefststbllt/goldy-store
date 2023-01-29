@@ -1,0 +1,2 @@
+# goldy-store
+test-page
