@@ -1,0 +1,71 @@
+.main-header {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content 1fr min-content;
+  padding: 24px 0 0;
+  column-gap: 70px;
+  row-gap: 17px;
+}
+
+.main-header__city-select {
+  align-self: center;
+  width: max-content;
+  margin: 14px 0 0;
+}
+
+.main-header__phone {
+  font-size: 0.875rem;
+  line-height: 1em;
+  height: max-content;
+  width: max-content;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  margin: 14px 0 0 6px;
+}
+
+.main-header__phone-number {
+  margin: 0 0 0 10px;
+  max-width: 120px;
+}
+
+.main-header__logo {
+  align-self: center;
+  margin: 0 0 0 -27px;
+}
+
+.main-header__check-in {
+  height: max-content;
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  margin: 14px 0 0;
+}
+
+.main-header__check-in a {
+  font-size: 0.875rem;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 115px;
+  min-width: 38px;
+  word-break: break-word;
+}
+
+.main-header__check-in a:nth-child(2n) {
+  margin-left: 10px;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 1px;
+    background-color: $color-main-black;
+    margin-right: 9px;
+  }
+}
+
+.main-header__user-section {
+  align-self: center;
+  margin: 14px 0 0;
+}

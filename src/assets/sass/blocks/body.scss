@@ -1,0 +1,18 @@
+body {
+  display: grid;
+  transition: all .5s;
+  user-select: none;
+  background: linear-gradient(to bottom, white, $back);
+  font-family: $main-font;
+  font-weight: 600;
+}
+h1 {
+  font-family: $main-font;
+  font-weight: 600;
+  text-align: center;
+}
+
+p {
+  font-weight: 400;
+}
+

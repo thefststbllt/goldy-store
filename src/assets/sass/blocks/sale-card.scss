@@ -1,0 +1,74 @@
+.sale-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $color-white-smoke;
+  position: relative;
+  padding: 40px 24px 26px 24px;
+}
+
+.sale-card--discount {
+  &::before {
+    font-weight: 500;
+    font-size: 0.813rem;
+    line-height: 1em;
+    color: $color-main-white;
+    content: 'Sale';
+    background-color: $color-sale-green;
+    border-radius: 15px;
+    padding: 4px 12px;
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    z-index: 2;
+  }
+
+  .sale-card__price {
+    &::before {
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1em;
+      content: attr(data-old-price);
+      color: $color-suva-grey;
+      order: 1;
+      margin: 0 0 0 8px;
+      text-decoration: line-through;
+    }
+
+    &::after {
+      font-weight: 500;
+      font-size: 0.813rem;
+      line-height: 1em;
+      content: attr(data-discount);
+      color: $color-main-white;
+      background-color: $color-sale-red;
+      padding: 4px 8px;
+      border-radius: 15px;
+      margin: 0 0 0 auto;
+      order: 2;
+    }
+  }
+}
+
+.sale-card__buttons-wrapper {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.sale-card__price {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1em;
+  margin: 20px 0 13px;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 100%;
+}
+
+.sale-card__description {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.6em;
+}

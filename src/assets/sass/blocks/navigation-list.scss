@@ -1,0 +1,24 @@
+.navigation-list {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content max-content max-content max-content;
+  column-gap: 60px;
+  row-gap: 15px;
+  margin: 21px 0 22px;
+}
+
+.navigation-list__item {
+  max-width: 150px;
+  word-break: break-word;
+}
+
+.navigation-list__link {
+  font-size: 0.813rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  max-width: 150px;
+  letter-spacing: 0.015em;
+
+  &--current {
+    opacity: 0.5;
+  }
+}

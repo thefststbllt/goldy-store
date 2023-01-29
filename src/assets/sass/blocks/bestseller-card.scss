@@ -1,0 +1,39 @@
+.bestseller-card {
+  display: grid;
+  grid-template-columns: 1fr 650px;
+  column-gap: 100px;
+  position: relative;
+}
+
+.bestseller-card__picture-wrapper {
+  grid-area: 1/1/6/2;
+}
+
+.bestseller-card__info {
+  padding: 0 0 19px;
+  margin: 0 0 30px;
+  border-bottom: 1px solid $color-white-smoke;
+}
+
+.bestseller-card__info,
+.bestseller-card__spec,
+.bestseller-card__user-actions {
+  grid-column: 2/-1;
+}
+
+.bestseller-card__buttons {
+  display: grid;
+  row-gap: 10px;
+}
+
+.bestseller-card__buttons-wrapper {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  column-gap: 39px;
+}
+
+.bestseller-card__status-list {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}

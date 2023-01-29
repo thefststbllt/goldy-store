@@ -1,0 +1,52 @@
+//Global
+@import '../../libs/normalize';
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/fonts';
+@import 'global/utils';
+
+//Blocks
+@import 'blocks/page';
+@import 'blocks/main-header';
+@import 'blocks/city-select';
+@import 'blocks/city-field';
+@import 'blocks/logo';
+@import 'blocks/user-section';
+@import 'blocks/navigation';
+@import 'blocks/navigation-list';
+
+@import 'blocks/main-content';
+@import 'blocks/banners-list';
+@import 'blocks/banner';
+@import 'blocks/categories';
+@import 'blocks/categories-list';
+
+@import 'blocks/sale';
+@import 'blocks/sale-type';
+@import 'blocks/sale-cards';
+@import 'blocks/sale-card';
+@import 'blocks/card-buttons';
+@import 'blocks/adds';
+@import 'blocks/adds-list';
+@import 'blocks/advertisement-card';
+@import 'blocks/bestseller';
+@import 'blocks/bestseller-card';
+@import 'blocks/picture-list';
+@import 'blocks/bestseller-info';
+@import 'blocks/bestseller-spec';
+@import 'blocks/user-actions';
+@import 'blocks/bestseller-status';
+
+@import 'blocks/articles';
+@import 'blocks/articles-list';
+
+//UI
+@import 'blocks/button';
+@import 'blocks/direction-buttons';
+@import 'blocks/rating';
+@import 'blocks/discount-timer';
+@import 'blocks/color-list';
+@import 'blocks/size-list';
+
+//Swiper
+@import 'blocks/swiper';

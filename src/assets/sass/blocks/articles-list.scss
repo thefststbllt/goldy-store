@@ -1,0 +1,25 @@
+.articles-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.articles-list__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.articles-list__link time {
+  color: $color-suva-grey;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1em;
+  margin: 20px 0 0;
+}
+
+.articles-list__link h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 11px 0 0;
+}

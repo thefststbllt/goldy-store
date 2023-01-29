@@ -1,0 +1,60 @@
+.swiper1,
+.swiper2,
+.swiper3 {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.swiper1 .swiper-banner-button-prev,
+.swiper1 .swiper-banner-button-next {
+  position: absolute;
+  top: calc(50% - 27px);
+  z-index: 2;
+}
+
+.swiper1 .swiper-banner-button-prev {
+  left: 24px;
+}
+
+.swiper1 .swiper-banner-button-next {
+  right: 24px;
+}
+
+.swiper1 .swiper-wrapper {
+  max-width: 1300px;
+}
+
+.swiper3 .swiper-button-prev,
+.swiper3 .swiper-button-next {
+  color: $color-main-black;
+  transform: scale(0.3);
+}
+
+//Pagination
+
+.swiper1 .swiper-pagination {
+  transform: translate(2px, -10px);
+}
+
+.swiper1 .swiper-pagination-bullet,
+.swiper2 .swiper-pagination-bullet{
+  width: 6px;
+  height: 6px;
+  background-color: $color-main-white;
+  border: 1px solid $color-main-black;
+  opacity: 1;
+}
+
+.swiper1 .swiper-pagination-bullet-active,
+.swiper2 .swiper-pagination-bullet-active{
+  background: $color-main-black;
+}
+
+.swiper2 .swiper-wrapper {
+  max-width: 200px;
+}
+
+.swiper2 .swiper-slide {
+  max-width: 200px;
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-buttons__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &:not(:first-of-type) {
+    margin: 10px 0 0;
+  }
+}

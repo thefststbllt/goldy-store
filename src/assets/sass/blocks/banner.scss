@@ -1,0 +1,29 @@
+.banner {
+  padding: 176px 126px;
+  background: url("../img/background/background-crystal.png") no-repeat top 24px left 0, $color-main-grey;
+  max-width: calc(100% - 252px);
+}
+
+.banner__discount {
+  font-family: $title-font;
+  font-size: 1.25rem;
+  line-height: 1em;
+  max-width: 50%;
+}
+
+.banner__title {
+  font-family: $title-font;
+  font-size: 3.125rem;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 30px 0 54px;
+  width: max-content;
+  max-width: 50%;
+}
+
+.banner--gems {
+  background:
+          url("../img/background/background-crystal.png") no-repeat top 24px left 0,
+          url("../img/background/background-main-banner-1.png") no-repeat bottom 0 right 36px $color-main-grey;
+}

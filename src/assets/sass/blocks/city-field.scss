@@ -1,0 +1,54 @@
+.city-field {
+  background-color: $color-main-white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: calc(100% + 60px);
+  z-index: 2;
+}
+
+.city-field__fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 13px;
+}
+
+.city-field__item {
+  width: 100%;
+}
+
+.city-field__item label {
+  width: calc(100% - 48px);
+  display: block;
+  padding: 9px 24px 9px 24px;
+  cursor: pointer;
+}
+
+.city-field__item--current .city-field__name {
+  position: relative;
+
+  &::before,
+  &::after {
+    display: block;
+    content: '';
+    height: 1px;
+    background-color: $color-basic-black;
+    position: absolute;
+    top: 50%;
+  }
+
+  &::before {
+    width: 5px;
+    right: -18px;
+    transform: rotate(45deg);
+    top: calc(50% + 2px);
+  }
+
+  &::after {
+    width: 10px;
+    right: -25px;
+    transform: rotate(-47deg);
+  }
+}
+
+.city-field__variant:checked + label {
+  background-color: $color-light-grey;
+}

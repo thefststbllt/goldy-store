@@ -1,0 +1,32 @@
+.bestseller-status {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.bestseller-status__item {
+  color: $color-main-white;
+  font-weight: 500;
+  font-size: 0.813rem;
+  line-height: 1em;
+  min-width: 30px;
+  padding: 4px 11px;
+  text-align: center;
+  border-radius: 15px;
+
+  &:not(:first-child) {
+    margin: 0 0 0 4px;
+  }
+}
+
+.bestseller-status__item--new {
+  background-color: $color-ui-cello;
+}
+
+.bestseller-status__item--hit {
+  background-color: $color-sale-gold;
+}
+
+.bestseller-status__item--sale {
+  background-color: $color-half-backed;
+}

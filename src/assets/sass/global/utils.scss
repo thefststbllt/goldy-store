@@ -1,0 +1,58 @@
+h1, h2, h3, p {
+  margin: 0;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+fieldset {
+  border: none;
+}
+
+ul,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-main-black;
+  user-select: none;
+}
+
+img {
+  user-select: none;
+}
+
+label,
+button,
+a {
+  user-select: none;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}

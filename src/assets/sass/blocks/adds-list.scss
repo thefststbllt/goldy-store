@@ -1,0 +1,27 @@
+.adds-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.adds-list__item {
+  min-height: 173px;
+
+  &:nth-child(1n) {
+    .advertisement-card__discount-value {
+      background-color: $color-sale-red;
+    }
+  }
+
+  &:nth-child(2n) {
+    .advertisement-card__discount-value {
+      background-color: $color-sale-green;
+    }
+  }
+
+  &:nth-child(3n) {
+    .advertisement-card__discount-value {
+      background-color: $color-sale-gold;
+    }
+  }
+}

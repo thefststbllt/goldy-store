@@ -1,0 +1,74 @@
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: min-content;
+  row-gap: 8px;
+}
+
+.color-list__radio-sign {
+  display: block;
+  min-width: 30px;
+  height: 30px;
+  border: 1px solid $color-ui-grey;
+  border-radius: 50%;
+}
+
+.color-list__item {
+  &:not(:nth-child(16n + 1)) {
+    margin: 0 0 0 8px;
+  }
+}
+
+.color-list__item input + .color-list__radio-sign {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $color-ui-grey;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+  }
+}
+
+.color-list__item input:checked + .color-list__radio-sign {
+   border-color: $color-main-black;
+}
+
+.color-list__item input:disabled + .color-list__radio-sign {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.color-list__item input:focus-visible + .color-list__radio-sign {
+  outline: 2px solid royalblue;
+}
+
+.color-list__item input[value="silver"] + .color-list__radio-sign {
+  &::after {
+    background-color: $color-ui-grey;
+  }
+}
+
+.color-list__item input[value="gold"] + .color-list__radio-sign {
+  &::after {
+    background-color: $color-ui-gold;
+  }
+}
+
+.color-list__item input[value="bronze"] + .color-list__radio-sign {
+  &::after {
+    background-color: $color-ui-orange;
+  }
+}
+
+.color-list__item input[value="emerald"] + .color-list__radio-sign {
+  &::after {
+    background-color: $color-ui-salad;
+  }
+}

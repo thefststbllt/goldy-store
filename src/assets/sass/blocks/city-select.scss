@@ -1,0 +1,65 @@
+.city-select {
+  display: flex;
+  height: min-content;
+  position: relative;
+}
+
+.city-select__button {
+  font-size: 0.875rem;
+  line-height: 1em;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  margin: 0 0 0 8px;
+  max-width: 130px;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 2px;
+    background-color: $color-main-black;
+    position: absolute;
+    top: 50%;
+    transition: .3s all;
+  }
+
+  &::before {
+    right: -14px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    right: -16px;
+    transform: rotate(45deg);
+  }
+}
+
+.city-select__checkbox ~ .city-select__field {
+  position: absolute;
+  top: calc(100% + 12px);
+  transition: .3s all;
+}
+
+.city-select__checkbox:checked ~ .city-select__field {
+  transform: scale(0, 0);
+  transition: .3s all;
+}
+
+.city-select__checkbox:checked ~ .city-select__button {
+  &::before {
+    transform: rotate(45deg);
+    transition: .3s all;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    transition: .3s all;
+  }
+}
+
+.city-select__checkbox:focus-visible ~ .city-select__field {
+  transform: scale(1, 1);
+  transition: .3s all;
+}

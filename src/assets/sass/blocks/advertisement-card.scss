@@ -1,0 +1,47 @@
+.advertisement-card {
+  padding: 72px 26px 45px;
+  position: relative;
+  background: top 24px left -112px / 100% no-repeat url("../img/background/background-crystal.png") $color-main-grey;
+
+  &--gems {
+    background: top 0 right 0 no-repeat url("../img/background/background-discount--gems.png"),
+                top 24px left -112px / 100% no-repeat url("../img/background/background-crystal.png") $color-main-grey;
+  }
+
+  &--bracelets {
+    background: top 0 right 0 no-repeat url("../img/background/background-discount--bracelets.png"),
+                top 24px left -112px / 100% no-repeat url("../img/background/background-crystal.png") $color-main-grey;
+  }
+
+  &--rings {
+    background: top 0 right 0 no-repeat url("../img/background/background-discount--rings.png"),
+                top 24px left -112px / 100% no-repeat url("../img/background/background-crystal.png") $color-main-grey;
+  }
+}
+
+.advertisement-card__title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  max-width: 55%;
+}
+
+.advertisement-card__discount-value {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  color: $color-main-white;
+  padding: 7px 26px;
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+}
+
+.advertisement-card__discount-digit {
+  font-size: 2.25rem;
+  margin: 0 0 0 13px;
+  max-width: 150px;
+}

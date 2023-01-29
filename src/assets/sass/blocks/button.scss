@@ -1,0 +1,49 @@
+.button {
+  color: $color-main-white;
+  background-color: $color-main-black;
+  border: 1px solid $color-main-black;
+  font-size: 0.875rem;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px 56px;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  &:hover {
+    background-color: $color-button-hover;
+    border: 1px solid $color-button-hover;
+    transition: 0.3s all;
+  }
+
+  &:active {
+    background-color: $color-basic-black;
+    border: 1px solid $color-basic-black;
+    transition: 0.3s all;
+  }
+}
+
+.button--one-click {
+  color: $color-main-black;
+  background-color: $color-main-white;
+  border: 1px solid $color-main-black;
+
+  &:hover {
+    color: $color-main-white;
+    background-color: $color-main-black;
+    border: 1px solid $color-main-black;
+    transition: 0.3s all;
+  }
+
+  &:active {
+    color: $color-main-white;
+    background-color: $color-basic-black;
+    border: 1px solid $color-basic-black;
+    transition: 0.3s all;
+  }
+}
+
+.button--banner {
+  padding: 19px 55px;
+}

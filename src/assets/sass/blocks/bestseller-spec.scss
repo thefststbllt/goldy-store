@@ -1,0 +1,23 @@
+.bestseller-spec {
+  display: grid;
+  row-gap: 16px;
+
+  &:not(:last-child) {
+    margin: 0 0 2px;
+  }
+}
+
+.bestseller-spec__title {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.bestseller-spec__list {
+  margin: 0 0 30px;
+}
+
+.bestseller-spec .size-list {
+  margin: 0 0 40px;
+}

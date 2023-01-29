@@ -1,0 +1,58 @@
+.bestseller-info {
+  display: grid;
+  grid-template-columns: 242px 1fr;
+  column-gap: 36px;
+}
+
+.bestseller-info__rating {
+  grid-column: 1/-1;
+}
+
+.bestseller-info__vendor {
+  color: $color-suva-grey;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1em;
+  grid-column: 1/-1;
+  margin: 0 0 2px;
+}
+
+.bestseller-info__title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1em;
+  grid-column: 1/-1;
+  margin: 21px 0 20px;
+}
+
+.bestseller-info__price {
+  font-weight: 600;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 10px;
+
+  &::before {
+    font-weight: 400;
+    font-size: 1rem;
+    content: attr(data-old-price);
+    color: $color-suva-grey;
+    text-decoration: line-through;
+    margin: 0 0 0 16px;
+    order: 1;
+  }
+
+  &::after {
+    font-weight: 500;
+    font-size: 0.813rem;
+    line-height: 1em;
+    content: attr(data-discount);
+    color: $color-main-white;
+    background-color: $color-sale-red;
+    padding: 4px 8px;
+    border-radius: 15px;
+    margin: 0 0 0 auto;
+    order: 2;
+  }
+}

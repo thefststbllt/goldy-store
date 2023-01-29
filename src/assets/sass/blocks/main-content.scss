@@ -1,0 +1,29 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 80px;
+}
+
+.main-content__section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+
+  &:not(:first-of-type) {
+    margin: 120px 0 0;
+  }
+}
+
+.main-content .bestseller,
+.main-content .articles {
+  margin: 115px 0 0;
+}
+
+.main-content__section h2{
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1em;
+  margin: 0 0 40px;
+}

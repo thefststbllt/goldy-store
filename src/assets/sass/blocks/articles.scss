@@ -1,0 +1,37 @@
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+}
+
+.articles .articles__title {
+  margin: 0;
+}
+
+.articles__read-more {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  align-self: flex-end;
+  display: flex;
+  align-items: flex-end;
+  justify-self: flex-end;
+  height: min-content;
+
+  &::after {
+    content: '';
+    display: block;
+    min-width: 26px;
+    height: 12px;
+    margin: 0 0 0 12px;
+    background-image: url("../img/icons/sprite/icon-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
+}
+
+.articles__list {
+  grid-column: 1/-1;
+}

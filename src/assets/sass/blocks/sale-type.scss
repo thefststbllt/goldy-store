@@ -1,0 +1,37 @@
+.sale-type {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.sale-type__button {
+  font-size: 0.875rem;
+  line-height: 1em;
+  color: $color-main-black;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 21px;
+  background-color: $color-white-smoke;
+  cursor: pointer;
+  max-width: 220px;
+
+  &:hover {
+    background-color: $color-gainsboro-grey;
+  }
+
+  &:active,
+  &--current {
+    color: $color-main-white;
+    background-color: $color-main-black;
+  }
+
+  &--current {
+    &:hover,
+    &:active {
+      color: $color-main-white;
+      background-color: $color-main-black;
+      cursor: default;
+    }
+  }
+}

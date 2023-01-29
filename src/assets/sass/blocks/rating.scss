@@ -1,0 +1,14 @@
+.rating {
+  display: flex;
+
+  &::after {
+    content: attr(data-bestseller-rating);
+    margin-left: 10px;
+  }
+}
+
+.rating__item {
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}

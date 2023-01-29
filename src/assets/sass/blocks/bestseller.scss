@@ -1,0 +1,21 @@
+.bestseller {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  row-gap: 33px;
+}
+
+.bestseller .bestseller__title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.bestseller__card {
+  grid-column: 1/-1;
+}
+
+.bestseller__button {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1em;
+}

@@ -1,0 +1,23 @@
+.sale {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.sale__button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: -10px 0 0;
+}
+
+.sale__title,
+.sale__cards {
+  grid-column: 1/-1;
+}
+
+.sale .sale__title {
+  margin: 0 0 21px;
+}
+
+.sale__cards {
+  margin: 37px 0 0;
+}
