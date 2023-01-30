@@ -8,10 +8,16 @@
 }
 
 .bestseller-spec__title {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 0.75rem;
   line-height: 1em;
   text-transform: uppercase;
+}
+
+.bestseller-spec__title-tooltip {
+  margin: 0 0 0 8px;
 }
 
 .bestseller-spec__list {

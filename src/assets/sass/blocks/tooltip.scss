@@ -1,0 +1,40 @@
+.tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-rat-grey;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.tooltip:hover {
+    position: relative;
+
+    &::before,
+    &::after {
+        display: block;
+        position: absolute;
+        background-color: $color-main-white;
+    }
+
+    &::before {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.4em;
+        text-transform: none;
+        content: attr(data-tooltip);
+        min-width: 223px;
+        padding: 24px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        bottom: calc(100% + 18px);
+    }
+
+    &::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        transform: rotate(45deg);
+        bottom: calc(100% + 14px);
+    }
+}
